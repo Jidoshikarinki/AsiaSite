@@ -1,0 +1,70 @@
+.COUNTRIES {
+    background-image: url(https://images4.alphacoders.com/562/562920.jpg);
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    background-size: cover;
+    background-attachment: fixed;
+
+    .Total {
+        color: white;
+        padding-top: 30px;
+        
+        h3 {
+        font-size: 40px;
+        }
+    }
+
+    .country-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 50px;
+        overflow-y: auto;
+        padding-bottom: 20px;
+        width: 77%;
+        max-height: 410px;
+        -webkit-overflow-scrolling: touch;
+        margin-bottom: 50px;
+
+        .card {
+            margin: 10px;
+            background-color: #1b1a29;
+            height: 400px;
+            width: 300px;
+            transition: 0.2s;
+
+            * {
+                color: white;
+            }
+
+            .dark-bule {
+                color: #6989a3;
+            }
+
+            img {
+                height: 200px;
+                width: 100%;
+                object-fit: cover;
+            }
+
+            .card-body {
+                padding: 10px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+
+        .card:hover {
+            transform: scale(1.02);
+            transition: 0.2s;
+            box-shadow: 10px 10px 400px 187px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 10px 10px 400px 187px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 400px 187px rgba(0,0,0,0.75);
+        }
+    }
+}
+

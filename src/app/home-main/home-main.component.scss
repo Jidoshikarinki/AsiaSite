@@ -1,0 +1,289 @@
+header {
+  transform: translateY(50px);
+
+  .row {
+    height: 100vh;
+    background-image: url(https://wallpapercosmos.com/w/full/0/f/a/1449615-3840x2160-desktop-4k-asia-wallpaper-photo.jpg);
+    background-size: contain;
+    background-attachment: fixed;
+
+    .col-6 {
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      a {
+        transform: scale(2);
+        text-decoration: none;
+
+        .upper {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          img {
+            height: 80px;
+            margin-right: 0;
+            transition: 2000s;
+          }
+
+          .title {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            * {
+              color: white;
+            }
+
+            h6 {
+              margin: 0;
+              font-size: 15px;
+              padding: 0;
+              transition: 2s;
+            }
+
+            h1 {
+              margin: 0;
+              font-size: 40px;
+              padding: 0;
+              transition: 2s;
+            }
+          }
+        }
+
+        .upper:hover {
+
+          h6 {
+            transform:scale(1.1) translateX(10px);
+            transition: 2s;
+          }
+
+          h1 {
+            transform:scale(1.5) translateX(10px);
+            transition: 2s;
+          }
+
+          img {
+            transform:scale(1.5) translateX(-20px);
+            transition: 2s;
+          }
+        }
+      }
+    }
+
+    .col {
+      background-color: #12225a;
+      display: flex;
+      flex-direction: column;
+
+      .upper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+
+        h1 {
+          margin-top: 100px;
+          color: #ffc600;
+          margin-top: 200px;
+        }
+
+        h3 {
+          font-family: "Marck Script", cursive;
+          color: white;
+          margin-bottom: 100px;
+        }
+      }
+
+      .under {
+        img {
+          height: 100px;
+          border-radius: 5px;
+          transition: 0.2s;
+        }
+
+        .first {
+          height: 200px;
+          z-index: 0;
+        }
+
+        .second {
+          z-index: 1;
+          transform: translateX(60px) translateY(250px);
+        }
+
+        .third {
+          height: 125px;
+          z-index: 2;
+          transform: translateX(200px) translateY(280px);
+        }
+
+        .fourth {
+          height: 130px;
+          transform: translateX(-50px) translateY(20px);
+        }
+
+        .fifth {
+          transform: translateX(100px) translateY(-100px);
+        }
+
+        .first:hover {
+          transform: scale(1.05);
+          transition: 0.2s;
+        }
+      }
+    }
+  }
+}
+
+.main2 {
+  background-image: url(../../assets/Images/Background.png);
+  height: 680px;
+  background-size: cover;
+
+  .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    * {
+      color: white;
+      margin-right: 125px;
+    }
+
+    h1 {
+      margin-top: 100px;
+      color: #ffc600;
+      margin-top: 200px;
+    }
+
+    h3 {
+      font-family: "Marck Script", cursive;
+    }
+  }
+}
+
+.COUNTRIES {
+  background-color: #0b1330;
+  padding-bottom: 30px;
+  overflow-x: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .Total {
+    display: flex;
+    align-items: center;
+
+    h3 {
+      color: wheat !important;
+      margin-left: 20px;
+      padding-top: 20px;
+    }
+  }
+
+  .country-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    overflow-y: auto;
+    padding-bottom: 20px;
+    width: 77%;
+    max-height: 450px;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 150px;
+
+    &::-webkit-scrollbar {
+      width: 12px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #1b1a29;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #6989a3;
+      border-radius: 10px;
+      border: 3px solid #1b1a29;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: #2b4c6f;
+    }
+
+    .card {
+      margin: 10px;
+      background-color: #1b1a29;
+      height: 425px;
+      width: 300px;
+
+      * {
+        color: white;
+      }
+
+      .dark-bule {
+        color: #6989a3;
+      }
+
+      img {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .card-body {
+        padding: 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        .card-title {
+          height: 50px;
+        }
+
+        .card-text {
+          height: 80px;
+        }
+      }
+
+      .btn {
+        margin-top: auto;
+      }
+    }
+  }
+}
+
+:root {
+  scroll-behavior: smooth;
+}     
+
+.stt {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: rgb(128, 128, 255) url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath fill='currentColor' d='M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z'%3E%3C/path%3E%3C/svg%3E") center no-repeat;
+  box-shadow: 0 0.25rem 0.5rem 0 gray;
+  opacity: 0.7;
+}
+
+.stt:hover {
+  opacity: 0.8;
+}
+
+.stt:focus {
+  opacity: 0.9;
+}
+
+.stt:active {
+  opacity: 1;
+}

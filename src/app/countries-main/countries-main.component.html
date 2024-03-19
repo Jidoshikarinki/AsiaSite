@@ -1,0 +1,20 @@
+<div class="COUNTRIES">
+    <div class="Total">
+      <h3>Total Countries: {{ countriesData.length }}</h3>
+    </div>
+    <div class="country-container">
+      <ng-container *ngFor="let country of countriesData">
+        <div class="card">
+          <img [src]="country.flags?.png" class="card-img-top" alt="Country Flag">
+          <div class="card-body">
+            <h5 class="card-title">{{ country.name.common }}</h5>
+            <p class="card-text"><span class="dark-bule">Population:</span> {{ country.population }}</p>
+            <p class="card-text"><span class="dark-bule">Capital:</span> {{ country.capital }}</p>
+            <p class="card-text"><span class="dark-bule">Independent:</span> {{ country.independent }}</p>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+  
+

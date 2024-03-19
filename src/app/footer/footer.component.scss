@@ -1,0 +1,54 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(3, 6, 17);
+    color: white !important;
+    padding-top: 20px;
+  
+    .up {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 10px;
+  
+      .left {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+  
+        a {
+          text-decoration: none;
+        }
+      }
+  
+      .middle {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+  
+        blockquote {
+          font-family: "Marck Script", cursive;
+        }
+      }
+  
+      .right {
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+        text-align: center;
+        a {
+          i {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  
+    .down {
+      background-color: rgb(2, 4, 12);
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 5px;
+    }
+  }

@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font-family: "Madimi One", sans-serif;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1b1a29;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #6989a3;
+  border-radius: 10px;
+  border: 3px solid #1b1a29;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #2b4c6f;
+}

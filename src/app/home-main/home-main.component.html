@@ -1,0 +1,106 @@
+<header>
+  <div class="row">
+    <div class="col-6">
+      <a routerLink="/">
+        <div class="upper">
+          <img src="../../assets/Images/Logo.png" alt="Asia Image" />
+    
+          <div class="title">
+            <h6>More About</h6>
+            <h1>ASIA</h1>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col">
+      <div class="upper">
+        <h1>The Asia Informatic Site</h1>
+
+        <h3>Learn More About Asia</h3>
+      </div>
+
+      <div class="under">
+        <img class="second" src="https://w.forfun.com/fetch/b8/b809b08d91cd2c1e792cfad98ee5e42b.jpeg" alt="">
+        <img class="third" src="https://wallpapercosmos.com/w/full/5/3/8/1450779-3840x2160-desktop-4k-asia-background-image.jpg" alt="">
+        <img class="fourth" src="https://wallpapercrafter.com/sizes/2560x1440/32761-Asia-field-4K.jpg" alt="">
+        <img class="fifth" src="https://images.pexels.com/photos/301614/pexels-photo-301614.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+        <img class="first" src="https://c4.wallpaperflare.com/wallpaper/100/130/573/china-guangxi-guilin-li-river-wallpaper-preview.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<main>
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+          <img src="../../assets/Images/Carusel 1.jpg" class="d-block w-100" alt="Carusel Image" />  
+        </div>
+        <div class="carousel-item">
+          <img src="../../assets/Images/Carusel 2.jpg" class="d-block w-100" alt="Carusel Image" />
+        </div>
+        <div class="carousel-item">
+          <img src="../../assets/Images/Carusel 3.webp" class="d-block w-100" alt="Carusel Image" />
+        </div>
+        <div class="carousel-item">
+          <img src="../../assets/Images/Carusel 4.jpg" class="d-block w-100" alt="Carusel Image" />
+        </div>
+        <div class="carousel-item">
+          <img src="../../assets/Images/Carusel 5.jpg" class="d-block w-100" alt="Carusel Image" />
+        </div>
+        <div class="carousel-item">
+            <img src="../../assets/Images/Carusel 6.jpg " class="d-block w-100" alt="Carusel Image" />
+          </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </main>
+
+  <div class="main2">
+    <div class="row">
+      <div class="col-7"></div>
+
+      <div class="col">
+        <h1>The Asia Informatic Site</h1>
+
+        <h3>Learn More About Asia</h3>
+
+        <h6>
+          Lot of people don't have knowlage about it's biodiversity and
+          continents. Aspecially Americans. So, why not learn about the
+          biggest of them all ━━ Asia? We made this site just for that.
+        </h6>
+      </div>
+    </div>
+  </div>
+
+  <div class="COUNTRIES">
+    <div class="Total">
+      <h3>Total Articles: {{ newsData.length }}</h3>
+    </div>
+    <div class="country-container">
+      <ng-container *ngFor="let article of newsData">
+        <div *ngIf="article.urlToImage" class="card">
+          <img [src]="article.urlToImage" class="card-img-top" alt="Article Image">
+          <div class="card-body">
+            <h5 class="card-title">{{ article.title.length > 25 ? article.title.slice(0, 25) + '...' : article.title }}</h5>
+            <p class="card-text">{{ article.description.length > 50 ? article.description.slice(0, 25) + '...' : article.description }}</p>
+            <a [href]="article.url" class="btn btn-primary" target="_blank">Read more</a>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+  
+
+
+  <a href='#' class="stt"></a>
